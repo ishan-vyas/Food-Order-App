@@ -16,7 +16,7 @@ const Cart = (props) => {
     };
 
     const cartItemRemoveHandler = (id) => {
-
+        cartCtx.removeItem(id);
     };
 
     const cartItems = <ul className={styles['cart-items']}>{cartCtx.items.map((item) => {
